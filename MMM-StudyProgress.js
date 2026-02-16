@@ -100,6 +100,15 @@ Module.register("MMM-StudyProgress", {
       wrapper.appendChild(semesterEl);
     });
 
+    // Durchschnittsnote anzeigen
+    const averageGrade = this.calculateAverageGrade();
+    if (averageGrade !== null) {
+      const avgContainer = document.createElement("div");
+      avgContainer.classList.add("mmm-study-average");
+      avgContainer.innerHTML = "Durchschnittsnote: <strong>" + averageGrade.toFixed(2) + "</strong>";
+      wrapper.appendChild(avgContainer);
+    }
+
     return wrapper;
   },
 
@@ -116,6 +125,24 @@ Module.register("MMM-StudyProgress", {
     });
 
     return sum;
+  },
+
+  calculateAverageGrade: function () {
+    if (!this.studyData || !this.studyData.semesters) return null;
+
+    let totalGrade = 0;
+    let gradeCount = 0;
+
+    this.studyData.semesters.forEach((sem) => {
+      sem.modules.forEach((m) => {
+        if (m.grade !== null && m.status === "passed") {
+          totalGrade += m.grade;
+          gradeCount++;
+        }
+      });
+    });
+
+    return gradeCount > 0 ? totalGrade / gradeCount : null;
   },
 
   translateStatus: function (status) {

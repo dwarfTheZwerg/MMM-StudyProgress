@@ -82,3 +82,10 @@
 .status-planned .mmm-study-name {
   color: #b0bec5;
 }
+.mmm-study-average {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-weight: 600;
+}
