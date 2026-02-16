@@ -1,0 +1,84 @@
+.mmm-study-wrapper {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.mmm-study-header {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.mmm-study-progress-container {
+  margin-bottom: 10px;
+}
+
+.mmm-study-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+
+  border: 1px solid #ffffff;
+}
+
+.mmm-study-progress-fill {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.5s ease;
+}
+
+.mmm-study-progress-label {
+  position: absolute;
+  top: -18px;
+  right: 0;
+  font-size: 12px;
+}
+
+.mmm-study-semester {
+  margin-top: 10px;
+}
+
+.mmm-study-semester-title {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.mmm-study-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.mmm-study-row td {
+  padding: 2px 4px;
+}
+
+.mmm-study-name {
+  text-align: left;
+}
+
+.mmm-study-ects,
+.mmm-study-grade,
+.mmm-study-status {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.mmm-study-right {
+  text-algin: right;
+}
+
+.status-passed .mmm-study-name {
+  color: #a5d6a7;
+}
+
+.status-registered .mmm-study-name {
+  color: #ffeb3b;
+}
+
+.status-planned .mmm-study-name {
+  color: #b0bec5;
+}
