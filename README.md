@@ -49,9 +49,9 @@ npm install
         { "name": "Fertigungstechnik", "ects": 5, "grade": 4.0, "status": "passed" },
         { "name": "Computer Systems Fundamentals", "ects": 5, "grade": 2.0, "status": "passed" },
         { "name": "Softwareentwicklung", "ects": 5, "grade": 3.0, "status": "passed" },
-	{ "name": "Software Engineering", "ects": 5, "grade": 3.3, "status": "passed" }
+	      { "name": "Software Engineering", "ects": 5, "grade": 3.3, "status": "passed" }
       ]
     },
-]
+  ]
 }
 ```
