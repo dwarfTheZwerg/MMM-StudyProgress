@@ -131,7 +131,6 @@ Module.register("MMM-StudyProgress", {
     if (!this.studyData || !this.studyData.semesters) return null;
 
     let totalGrade = 0;
-    let gradeCount = 0;
     let totalEcts = 0;
 
     this.studyData.semesters.forEach((sem) => {
@@ -139,7 +138,6 @@ Module.register("MMM-StudyProgress", {
         if (m.grade !== null && m.status === "passed") {
           totalGrade += m.grade * m.ects;
           totalEcts += m.ects;
-          gradeCount++;
         }
       });
     });
