@@ -6,7 +6,7 @@ Ein MagicMirror² Modul, das den persönlichen Studienverlauf anzeigt (offene Pr
 
 ```bash
 cd ~/MagicMirror/modules
-git clone https://codeberg.org/Zwerg/MMM-StudyProgress.git
+git clone https://github.com/dwarfTheZwerg/MMM-StudyProgress.git
 cd MMM-StudyProgress
 npm install
 ```
@@ -50,3 +50,4 @@ npm install
 }
 
 ```
+
