@@ -173,7 +173,7 @@ Module.register("MMM-StudyProgress", {
 
     const label = document.createElement("span");
     label.classList.add("mmm-study-progress-label");
-    label.innerHTML = pct.toFixed(1) + "%";
+    label.innerHTML = Math.round(pct) + "%";
 
     bar.appendChild(fill);
     bar.appendChild(label);
